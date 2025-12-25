@@ -46,9 +46,15 @@ export const Login: React.FC = () => {
           </div>
         </CardContent>
 
-        <CardFooter className="justify-center">
-          <p className="text-xs text-gray-500">
+        <CardFooter className="justify-center flex-col space-y-2">
+          <p className="text-xs text-gray-500 text-center">
             Upon successful authentication, you'll be redirected to the authorized area
+          </p>
+          <p className="text-xs text-gray-500">
+            Don't have an account?{' '}
+            <Link to="/register" className="text-blue-600 hover:text-blue-500 font-medium">
+              Create one here
+            </Link>
           </p>
         </CardFooter>
       </Card>

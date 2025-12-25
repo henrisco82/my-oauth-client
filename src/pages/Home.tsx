@@ -64,16 +64,28 @@ export const Home: React.FC = () => {
           </Card>
         </div>
 
-        <div className="text-center">
-          <Link to="/login">
-            <Button
-              size="lg"
-              className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
-            >
-              Sign In
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </Link>
+        <div className="text-center space-y-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/login">
+              <Button
+                size="lg"
+                className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+              >
+                Sign In
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+            <Link to="/register">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-black text-black hover:bg-black hover:text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+              >
+                Create Account
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
 
           <div className="mt-8 text-sm text-gray-500 space-y-2">
             <p>Authorization Server: localhost:9000</p>
